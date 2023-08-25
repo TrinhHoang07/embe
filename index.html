@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="banner">
+            <h3 class="slow-text">Xin chào, <span class="effect-text"></span></h3>
+            <h3 class="sub-slow-text"><span class="effect-text-2"></span></h3>
+            <div class="timer">
+                <div class="heart-wr">
+                    <h5 class="days">
+                        5 Ngày
+                    </h5>
+                    <div class="box">
+                        <img width="48px" height="48px" src="./assets/images/ok.png" alt="">
+                    </div>
+                </div>
+                <div class="time-detail">
+                    <span class="hours">11</span>
+                    <span>:</span>
+                    <span class="minutes">11</span>
+                    <span>:</span>
+                    <span class="seconds">11</span>
+                </div>
+            </div>
+            <p class="down-scroll">Kéo xuống nhé!!!</p>
+        </div>
+        <div class="contents">
+            <div class="wrapper-images-aos">
+                <h3 class="heading-aos">Em bé nhà mình</h3>
+                <div 
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" 
+                    class="image-item-aos"
+                >
+                    <img src="./assets/images/cute_1.jpg" alt="preview beyeu">
+                </div>
+                <div 
+                    data-aos="flip-right" 
+                    class="image-item-aos"
+                >
+                    <img src="./assets/images/cute_2.jpg" alt="preview beyeu">
+                </div>
+                <div 
+                    data-aos="fade-down-right"
+                    class="image-item-aos"
+                >
+                    <img src="./assets/images/cute_3.jpg" alt="preview beyeu">
+                </div>
+                <div 
+                    data-aos="fade-up"
+                    class="image-item-aos"
+                >
+                    <img src="./assets/images/cute_4.jpg" alt="preview beyeu">
+                </div>
+                <div 
+                    data-aos="zoom-in-up"
+                    class="image-item-aos"
+                >
+                    <img src="./assets/images/cute_5.jpg" alt="preview beyeu">
+                </div>
+            </div>
+            <div class="wrapper-swipers">
+                <div class="swiper sw-cnt">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div 
+                            class="image-item-sw"
+                        >
+                            <img height="500px" src="./assets/images/cute_6.jpg" alt="preview beyeu">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div 
+                            class="image-item-sw"
+                        >
+                            <img height="500px" src="./assets/images/cute_7.jpg" alt="preview beyeu">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div 
+                            class="image-item-sw"
+                        >
+                            <img height="500px" src="./assets/images/cute_8.jpg" alt="preview beyeu">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div 
+                            class="image-item-sw"
+                        >
+                            <img height="500px" src="./assets/images/cute_9.jpg" alt="preview beyeu">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div 
+                            class="image-item-sw"
+                        >
+                            <img height="500px" src="./assets/images/cute_10.jpg" alt="preview beyeu">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div 
+                            class="image-item-sw"
+                        >
+                            <img height="500px" src="./assets/images/cute_11.jpg" alt="preview beyeu">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div 
+                            class="image-item-sw"
+                        >
+                            <img height="500px" src="./assets/images/cute_12.jpg" alt="preview beyeu">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const typed = new Typed(".effect-text", {
+            strings: ['Thúy cuteee', 'Thúy dangyeu'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+
+        const typed2 = new Typed(".effect-text-2", {
+            strings: ['I Love You', 'I Miss You'],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop: true
+        });
+
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var swiper = new Swiper(".sw-cnt", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          }
+        });
+      </script>
+</body>
+</html>

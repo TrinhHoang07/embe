@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+@font-palette-values --Grays {
+    font-family: Rocher;
+    base-palette: 9;
+}
+
+.heading-aos {
+    font-family: 'Rocher';
+    padding: 32px 0 12px 0;
+    text-align: center;
+    font-palette: --Grays;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.timer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 101px;
+}
+
+.down-scroll {
+    position: absolute;
+    right: 24px;
+    bottom: 32px;
+    font-size: 14px;
+    color: brown;
+}
+
+.days {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+
+.heart-wr {
+    position: relative;
+}
+
+.time-detail span {
+    color: darkgoldenrod;
+}
+
+.sub-slow-text,
+.slow-text {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 48px;
+    color: darkred;
+    font-family: cursive;
+}
+
+.sub-slow-text span {
+    color: red;
+
+}
+
+.slow-text span {
+    color: peru;
+}
+
+.sub-slow-text {
+    padding-top: 14px;
+}
+
+/* .heading-aos {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 32px 0;
+    text-align: center;
+    color: orange;
+} */
+
+.swiper-slide,
+.wrapper-images-aos {
+    padding: 16px;
+    background-color: #f2f3f5;
+}
+
+.image-item-aos {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.image-item-sw img,
+.image-item-aos img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* heart */
+.box {
+    position: absolute;
+    right: -38px;
+    top: -20px;
+}
+
+.box img {
+    animation: animate .8s linear infinite;
+}
+@keyframes animate {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(.8);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
