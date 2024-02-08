@@ -4,7 +4,7 @@ window.onload = function() {
     const minute = document.querySelector('.minutes')
     const second = document.querySelector('.seconds')
 
-    const startDate = new Date(2023, 7, 23)
+    const startDate = new Date(2023, 7, 22)
 
 
     function setDate() {
