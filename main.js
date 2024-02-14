@@ -30,3 +30,15 @@ window.onload = function() {
     setInterval(setDate, 1000);
 
 }
+
+const fixed = document.querySelector('.fixed-o')
+const talk = document.querySelector('.talking')
+const btn = document.querySelector('.talking button')
+
+
+if(btn && fixed && talk) {
+    btn.addEventListener('click', () => {
+        fixed.style.visibility = 'hidden'
+        talk.style.transform = 'translateY(-500%)'
+    })
+}
